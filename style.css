@@ -1,0 +1,271 @@
+body {
+    background-image: url('images/poker.jpg') ;
+    font-family: 'Righteous', cursive;
+    color: white;
+    max-width: 70%;
+    margin: 0 auto;
+}
+.music{
+    background-color: #333;
+    color: red;
+}
+
+.titre{
+    font-family: 'Monoton', cursive;
+    text-align: center;
+    font-size: 150px;
+    margin: 30px;
+    color: #333;
+}
+
+.musicControls{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+label {
+    font-size: 30px;
+}
+
+#nbJoueurs{
+    text-align: center;
+    font-size: 70px;
+    color: red;
+    background-color: #111;
+    border: 5px solid red;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 5px #FF0000;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100px;
+    height: 100px;
+    outline: none;
+}
+
+#submit{
+    font-family: 'Righteous', cursive;;
+    font-size: 20px;
+    background-color:#111;
+    border-radius: 10px;
+    color:red;
+    width: 150px;
+    height: 50px;
+    transition: 0.3s all ease-out;
+}
+
+#submit:hover{
+    transform: scale(1.1);
+    color: #333;
+    background-color: red;
+    content: "&#10084; JOUER! &#10084;"
+}
+
+
+.form{
+    text-align: center;
+}
+
+
+.hide{
+    display: none;
+}
+
+.active .affichage{
+    box-shadow: 3px 3px 20px 10px rgb(12, 202, 12, 0.5), inset 5px 5px 22px 10px #000000 ;
+    border: 5px solid rgb(12, 202, 12);
+}
+
+.disable{
+    opacity: 50%;
+    pointer-events: none;
+}
+
+.disable .affichage{
+    border: 5px solid red;
+    box-shadow: none;
+}
+
+.inactive :not(p):not(span){
+    opacity: 75%;
+    pointer-events: none;
+}
+
+.inactive .affichage{
+    border: none;
+    transition: all 0.3s ease-in;
+}
+
+.erreur{
+    display:none;
+    margin-top: 25px;
+    color: red;
+    font-size: 20px;
+}
+
+.board{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.center{
+    text-align: center;
+}
+.position{
+    margin-top: 0;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.affichage{
+    box-sizing: border-box;
+    background-image:url("images/felt.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 270px;
+    width: 400px;
+    padding: 15px 25px;
+    margin-bottom: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-radius: 15px;
+    box-shadow: inset 5px 5px 22px 10px #000000;
+    transition: all 0.3s ease-in;
+}
+
+.ereDeJeu{
+    margin-bottom: 50px;
+}
+
+.controls {
+    font-family: 'Righteous', cursive;;
+    font-size: 15px;
+    background-color:#111;
+    border-radius: 10px;
+    color:red;
+    width: 90px;
+    height: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    transition: 0.3s all ease-out;
+}
+
+.controls:hover{
+    transform: scale(1.1);
+    color: #111;
+    background-color: red;
+}
+
+.carte {
+    display: inline-block;
+    margin: 10px;
+    margin-left: 15px;
+    
+    box-shadow: 7px -5px 8px 1px rgba(0,0,0,0.5);
+}
+
+.le21 {
+    -webkit-animation: le21 1s ease-in-out infinite alternate;
+    -moz-animation: le21 1s ease-in-out infinite alternate;
+    animation: le21 1s ease-in-out infinite alternate;
+}
+
+.winner {
+    border: 5px solid gold !important;
+}
+
+.winnerText{
+    font-family: 'Monoton', cursive;
+    font-size: 45px; 
+    color: #333;
+}
+
+.replay{
+    text-align: center;
+    margin-bottom: 30px;
+    transform: scale(1.5);
+}
+
+.win{
+    -webkit-animation: win 1s ease-in-out infinite alternate;
+    -moz-animation: win 1s ease-in-out infinite alternate;
+    animation: win 1s ease-in-out infinite alternate;
+}
+
+.win21{
+    -webkit-animation: win21 1s ease-in-out infinite alternate;
+    -moz-animation: win21 1s ease-in-out infinite alternate;
+    animation: win21 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes le21 {
+    from {
+      text-shadow: 
+        0 0 10px rgb(241, 74, 74),
+        0 0 20px rgb(241, 74, 74), 
+        0 0 30px red, 
+        0 0 40px red, 
+        0 0 50px red, 
+        0 0 60px rgb(255, 86, 86), 
+        0 0 70px rgb(255, 86, 86);
+    }
+    to {
+      text-shadow: 
+        0 0 20px red, 
+        0 0 30px red, 
+        0 0 40px red, 
+        0 0 50px red, 
+        0 0 60px red, 
+        0 0 70px red, 
+        0 0 80px red;
+    }
+  }
+
+  @-webkit-keyframes win {
+    from {
+      text-shadow: 
+        0 0 5px rgb(181, 184, 3),
+        0 0 6px rgb(181, 184, 3), 
+        0 0 7px rgb(238, 234, 6), 
+        0 0 8px rgb(238, 234, 6), 
+        0 0 9px rgb(238, 234, 6), 
+        0 0 10px rgb(243, 240, 78), 
+        0 0 11px rgb(243, 240, 78);
+    }
+    to {
+        text-shadow: 
+        0 0 5px rgb(243, 240, 78),
+        0 0 6px rgb(243, 240, 78), 
+        0 0 7px rgb(238, 234, 6), 
+        0 0 8px rgb(238, 234, 6), 
+        0 0 9px rgb(238, 234, 6), 
+        0 0 10px rgb(181, 184, 3), 
+        0 0 11px rgb(181, 184, 3);
+    }
+  }
+
+  @-webkit-keyframes win21 {
+    from {
+        text-shadow: 
+        0 0 10px rgb(181, 184, 3),
+        0 0 20px rgb(181, 184, 3), 
+        0 0 30px rgb(238, 234, 6), 
+        0 0 40px rgb(238, 234, 6), 
+        0 0 50px rgb(238, 234, 6), 
+        0 0 60px rgb(243, 240, 78), 
+        0 0 70px rgb(243, 240, 78);
+    }
+    to {
+        text-shadow: 
+        0 0 10px rgb(243, 240, 78),
+        0 0 20px rgb(243, 240, 78), 
+        0 0 30px rgb(238, 234, 6), 
+        0 0 40px rgb(238, 234, 6), 
+        0 0 50px rgb(238, 234, 6), 
+        0 0 60px rgb(181, 184, 3), 
+        0 0 70px rgb(181, 184, 3);
+    }
+  }

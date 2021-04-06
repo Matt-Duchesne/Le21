@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Righteous&display=swap" rel="stylesheet">     
+    <script src="script/board.js"></script>
+    <script src="script/Jeu.js"></script>
+    <script src="script/Joueur.js"></script>
+    <script src="script/Carte.js"></script>
+    <script src="script/script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <span class="hide musicControls" data-js-music>
+        <button class="music disable" data-js-play>Musique</button><button class="music" data-js-stop>Stop</button></span>
+    <div>
+        <h1 class="titre le21">Le 21</h1>
+    </div> 
+    <form class="form" data-js-nbJoueurs>
+        <label for="nbJoueurs">Nombre de joueurs? (2, 3 ou 4)</label><br>
+        <input type="text" name="nbJoueurs" id="nbJoueurs" placeholder="?" maxlength="1" autocomplete="off" required><br>
+        <input type="submit" id="submit" value="&#10084; JOUER! &#10084;" data-js-submit> 
+        <p>Nombre de parties jouées: <span data-js-nbParties>0</span></p>
+    </form>
+    <span class="erreur center" data-js-erreur></span>
+
+    <div class="board" data-js-board></div>
+
+    <div class="replay hide" data-js-replay>
+        <button class="replayButton controls" data-js-replayButton>Rejouer?</button>
+    </div>
+</body>
+</html>
