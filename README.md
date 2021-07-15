@@ -1,11 +1,63 @@
+(See english version below!)
+
+À quiconque consulte ce projet,
+
+Ce projet a été conçu dans le cadre d'une évaluation de mi-session pour le cours de programmation interactive client-serveur.
+The but de ce projet était de directement appliquer les divers concepts de programmation que nous avions 
+appris cette session. Principalement, les classes ES6 et la programmation orienté objet. Ma note pour ce projet a été de 100%, 
+je suis donc très fier de ce projet en particulier.
+
+--- Le projet lui-même ---
+
+L'idée était de créer un simple jeu de carte similaire au Blackjack appellé 21. Le jeu est un simple "push-your-luck" 
+ou le joueur doit tenter de se rapprocher le plus possible du total de 21 sans jamais dépasser. 
+Les règles ici sont quelques fois simplifiées; par exemple, dans une partie normale, un as vaut 1 ou 11. 
+Dans ce cas-ci, l'as vaut uniquement 11. Toutes les figures équivalent 10 et le reste des cartes leur valeur indiquée.
+
+Une autre petite simplification est que la gestion d'un paquet de carte n'a pas été demandé donc une simple fonction 
+pour générer des cartes a été utilisée et n'utilise que la suite de coeurs. Puisque les cartes ne sont pas "retirées" du paquet, 
+plusieurs copies de la même carte peut apparaitre.
+
+Tâches principales étaient: 
+	- Afficher l'information
+	- Concevoir la logique de jeu (conditions de victoire, valeur des cartes, etc)
+	- Concevoir la logique pour les joueurs (à qui le tour?, passer par-dessus les joueurs qui ont passé, etc)
+	
+Vous pouvez consulter le document "énoncé.pdf" inclus avec d'avoir les détails complets de ce qui était demandé de nous pour cette évaluation.
+
+Puisque ceci nous avais été imposé pour but d'évaluation, je n'ai évidemment pas choisi ce projet. 
+Toutefois, je suis allé au bout de mes connaissances afin delui donner de la personnalité et du style bien au delà de ce qui avait été demandé. 
+L'exemple donné était entièrement textuel, noir sur blanc, aucun image, son ou CSS plus que minimal puisque le but était de tester notre code uniquement principalement. J'ai décidé d'y mettre toute ma passion afin de créer quelque chose dont je suis fier!
+
+J'ai ajouté: 
+	- Images des cartes et affichage en grille
+	- Musique et autres effets sonores
+	- Effets spéciaux lors d'un win/lose/pass
+	- Me rapprocher le plus possible d'un look "casino" sans la possibilité d'utiliser des images licensées
+	(fun fact: Pour la texture de velours des plateaux joueurs, j'ai du trouver des images sur un magasin de tissu puisque 
+	toutes les images de type "texture" parfaites pour mon projet était payantes! 
+	Trouver toutes les images, sons, fontes a été très amusant ... mais très long!)
+
+Malgré la simplicité apparente du projet pour un codeur expérimenté, ceci a été un défi de taille pour moi et j'ai investi 
+facilement 3 fois le temps qui aurait été normalement requis pour cette évaluation. Je suis très heureux du résultat final et 
+j'espère que vous ne serez pas trop dur sur mes erreurs de débutant (Il y en a surement plusieurs! Je suis convaincu 
+que certains d'entre vous pourrait recoder ceci en 10 lignes!). Si vous avez quelconques questions sur ce projet, 
+ne vous gênez pas de me contacter et il me fera plaisir d'en discuter avec vous!
+
+Merci beaucoup d'avoir lu ceci et je garde espoir d'avoir de vos nouvelles sous peu!
+
+Bonne journée!
+
+Matt
+
+******* English Version *******
+
 To whom this may concern,
 
 This project was made in the context of a mid-semester evaluation for the course 
 "Programmation interactive client-serveur". The goal of this project was to directly apply
 the diverse programming concepts we had learned thus far this semester. Mainly, ES6 classes and OOP.
-My grade for this project was 100%, so I am very proud of this particular one. I have done other, more ambitious
-projects that I'm very fond of but as this is the most recent one and that the code itself is what you are evaluating,
-I believed this would be the best choice for now. If you wish to see more, it will be my pleasure to upload those too!
+My grade for this project was 100%, so I am very proud of this particular one.
 
 --- The project itself! ---
 
